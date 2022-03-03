@@ -42,3 +42,17 @@ notes.sort()
 #clear
 notes.clear()
 #--------------------------------------
+#--------------------------------------
+#TUPLES - cannot be changed -can contain multiple types - ordered
+#define
+t = ("berk", "allül", 1,2,3.4,[0,2,4,6])
+t = "berk", "allül", 1,2,3.4,[0,2,4,6]
+#tuple() cannot be initialized with one element, put ','
+t = ("element",)
+
+t[1]
+t[0:3]
+
+t[2] = 99 #cannot be changed
+
+#--------------------------------------

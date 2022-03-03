@@ -42,5 +42,3 @@ print("Hello", "World", sep="_")
 #?print
 "_Python_".strip("_")
 
-"10" + 2
-"Merhaba! ".strip("")

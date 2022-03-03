@@ -56,3 +56,14 @@ t[0:3]
 t[2] = 99 #cannot be changed
 
 #--------------------------------------
+#--------------------------------------
+#DICTIONARY - can be changed -can contain multiple types - not ordered, indexed
+#define
+dictionary = {1:"berk", 2:"allül"}
+#get
+dictionary[1]
+#set
+dictionary[2] = "berkalgl"
+dictionary[3] = "berkalgl"
+#--------------------------------------
+

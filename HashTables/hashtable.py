@@ -34,6 +34,7 @@ class HashTable:
         return keys
         
 #can override the data in hash that is called collision
+
 hashTable = HashTable(50)
 hashTable.set('grapes', 10000)
 hashTable.set('apples', 10000)

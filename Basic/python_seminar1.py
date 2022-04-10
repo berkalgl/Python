@@ -67,3 +67,25 @@ change_even_indexes("merhaba darling")
 #total = 0
 #n = 0
 
+def sum(numbers, choiceType=0):
+    total = 0
+    n = 0
+    if choiceType == 0:
+        total = sum(numbers)
+        n = len(numbers)
+    elif choiceType == 1 or choiceType == 2: #even
+        for number in numbers:
+            if not number % 2 and choiceType == 1:
+                total += number
+                n += 1
+            elif number % 2 and choiceType == 2:
+                total += number
+                n += 1
+    else:
+        print('not supported')
+    
+    print(numbers)
+    print(total/n)
+    
+
+sum([1,2,3,4,5,6,7,8,6,13,15],2)

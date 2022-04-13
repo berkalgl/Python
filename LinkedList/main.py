@@ -14,6 +14,13 @@
 # both obj1 and obj2 reference to {'a': True} in the memory
 obj1 = { 'a' : True}
 obj2 = obj1
+obj1['a'] = 'hi there'
 
-print(obj1)
-print(obj2)
+#computer are gonna delete the memory that is unused and because it sees that object is still referencing the location of 
+# {'a' : True} and this will not be deleted
+# CARBAGE COLLECTION
+# If obj2 is changed by another value like a string, {'a': True} will not be used anymore and it is going to be garbage collected and deleted
+del obj1
+
+print(obj1) #obj1 is undefined
+print(obj2) # but this works !!!

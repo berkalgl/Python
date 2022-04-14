@@ -8,19 +8,14 @@
 #         }
 #     }
 # }
-# Fast Insertion     Slow lookup
-# Fast Deletion      More memory
-# Ordered
-# Flexible Size
-#
-#
 
 class Node:
     def __init__(self, val):
         self.value = val
         self.next = None
+        self.previous = None
 
-class LinkedList:
+class DoublyLinkedList:
     def __init__(self, val):
         self.head = Node(val)
         self.tail = self.head
@@ -28,6 +23,7 @@ class LinkedList:
     
     def append(self,val):
         newNode = Node(val)
+        newNode.previous = self.tail
         self.tail.next = newNode
         self.tail = newNode
         self.length += 1
@@ -36,6 +32,7 @@ class LinkedList:
     def preprend(self,val):
         newHead = Node(val)
         newHead.next = self.head
+        self.head.previous = newHead
         self.head = newHead
         self.length += 1
         return self
@@ -45,6 +42,7 @@ class LinkedList:
             return self
         leader = self.getNodeByIndex(index-1)
         unwantednode = leader.next
+        unwantednode.next.previous = leader
         leader.next = unwantednode.next
         self.length += -1
         return self
@@ -60,9 +58,11 @@ class LinkedList:
 
         newNode = Node(val)
         leader = self.getNodeByIndex(index-1)
-
-        newNode.next = leader.next
+        follower = leader.next
         leader.next = newNode
+        newNode.previous = leader
+        newNode.next = follower
+        follower.previous = newNode
         self.length += 1
 
         return self
@@ -85,34 +85,14 @@ class LinkedList:
             print(node.value)
             node = node.next
 
-    #[10,6,4,3]
-    def reverse(self):
-        if self.length == 1:
-            return self
-
-        first = self.head
-        self.tail = first
-        second = first.next
-        while second != None:
-            temp = second.next
-            second.next = first
-            first = second
-            second = temp
-
-        self.head.next = None
-        self.head = first
-
-        return self
-
         
-        
-myLinkedList = LinkedList(10)
+myLinkedList = DoublyLinkedList(10)
 myLinkedList.append(6)
 myLinkedList.append(4)
 myLinkedList.append(8)
 myLinkedList.printList()
 print('-----------')
-myLinkedList.reverse()
+myLinkedList.remove(2)
 myLinkedList.printList()
 # print(myLinkedList.length)
 # print('-----------')

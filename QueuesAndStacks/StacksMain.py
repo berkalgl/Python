@@ -5,6 +5,8 @@
 # push O(1) //add
 # peek O(1) //View the last element
 
+# STACKS WITH LINKED LIST
+
 class Node:
     def __init__(self, val):
         self.value = val
@@ -35,6 +37,12 @@ class Stack:
 
 
     def pop(self):
+        if self.top == None:
+            return None
+
+        if self.top == self.bottom:
+            self.bottom = None
+
         self.top = self.top.next
         self.length -= 1
         return self
@@ -51,14 +59,51 @@ class Stack:
             currentItem = currentItem.next
 
 
-myStack = Stack()
-myStack.push('Google')
-myStack.push('Turkcell')
-myStack.push('Garanti')
-myStack.push('Vodafone')
-myStack.printStack()
-print('------------')
-myStack.pop()
-myStack.printStack()
-print(myStack.top.value)
-print(myStack.length)
+# myStack = Stack()
+# myStack.push('Google')
+# myStack.push('Turkcell')
+# myStack.push('Garanti')
+# myStack.push('Vodafone')
+# myStack.printStack()
+# print('------------')
+# myStack.pop()
+# myStack.printStack()
+# print(myStack.peek().value)
+# print(myStack.length)
+#-------------------------
+# STACKS WITH ARRAY
+
+class StackArray:
+    def __init__(self):
+        self.data = []
+
+    def peek(self):
+        return self.data[len(self.data)-1]
+
+    def push(self, val):
+        self.data.append(val)
+        return self
+
+    def pop(self):
+        self.data.pop()
+        return self
+    
+    def isEmpty(self):
+        if len(self.data) == 0:
+            return True
+        return False
+
+    def printStack(self):
+        for i in range(len(self.data)-1,-1,-1):
+            print(self.data[i])
+
+stackWithArray = StackArray()
+stackWithArray.push('Google')
+stackWithArray.push('Google1')
+stackWithArray.push('Google2')
+stackWithArray.printStack()
+print('------------------')
+stackWithArray.pop()
+stackWithArray.printStack()
+
+

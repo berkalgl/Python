@@ -4,6 +4,7 @@
 # pop O(1) //remove
 # push O(1) //add
 # peek O(1) //View the last element
+# if we dont want the popped element not to be garbage collected, we can just simply holding it in temporary var and return it in the function
 
 # STACKS WITH LINKED LIST
 

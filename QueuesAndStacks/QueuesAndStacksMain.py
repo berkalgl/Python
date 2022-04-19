@@ -23,3 +23,8 @@
 # Matt -- Joy -- Samir -- Pavel
 # Arrays
 # Linked List
+
+##GENERAL
+# Fast Operations  SLOW LOOKUP
+# Fast Peek
+# Ordered

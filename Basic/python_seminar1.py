@@ -67,13 +67,14 @@ change_even_indexes("merhaba darling")
 #total = 0
 #n = 0
 
-def sum(numbers, choiceType=0):
+def mean(numbers, choiceType=0):
+    #choiceType = 1 --> even, = 2 --> odd, = 0 --> all
     total = 0
     n = 0
-    if choiceType == 0:
+    if choiceType == 0: #all
         total = sum(numbers)
         n = len(numbers)
-    elif choiceType == 1 or choiceType == 2: #even
+    elif choiceType == 1 or choiceType == 2: #even or odd
         for number in numbers:
             if not number % 2 and choiceType == 1:
                 total += number
@@ -86,6 +87,7 @@ def sum(numbers, choiceType=0):
     
     print(numbers)
     print(total/n)
+    return total/n
     
 
-sum([1,2,3,4,5,6,7,8,6,13,15],2)
+mean([1,3,2,4,6,8],2)

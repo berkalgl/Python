@@ -2,7 +2,6 @@
 """
 Created on Tue Mar  1 15:18:41 2022
 
-@author: TCBALGUL
 """
 
 a="Hello world"

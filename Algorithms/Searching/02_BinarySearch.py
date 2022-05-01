@@ -2,3 +2,4 @@
 # find middle and remove left or right
 # we are creating a binary search tree
 # lookup exists in binary tree data structure
+# Divide and conquer - O(LogN)

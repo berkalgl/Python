@@ -33,3 +33,12 @@ def fibonacciDP(): #where n is index and time complexity O(n)
 fib = fibonacciDP()
 print(fib(20))
 print(calc)
+
+# Bottom up approach
+def fibonacci2(n):
+    answer = [0,1]
+    for i in range(2, n+1):
+        answer.append(answer[i-2] + answer[i-1])
+    return answer.pop()
+
+print(fibonacci2(20))

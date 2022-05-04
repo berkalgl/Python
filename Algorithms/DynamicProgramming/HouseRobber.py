@@ -14,6 +14,8 @@
 # Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
 # Total amount you can rob = 2 + 9 + 1 = 12.
 
+# https://www.youtube.com/watch?v=73r3KWiEvyk
+
 from typing import List
 
 class Solution:
@@ -32,6 +34,6 @@ class Solution:
 
 s = Solution()
 
-array:List[int] = [1,2,3,5,6]
+array:List[int] = [1,4,6,7,9,11,17,25]
 print(array[-1])
 print(s.rob(array))

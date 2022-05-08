@@ -38,9 +38,10 @@ class Queue:
         if self.length == 1:
             self.last = None
 
+        dequeuedNode = self.first
         self.first = self.first.next
         self.length -= 1
-        return self
+        return dequeuedNode
 
     def printQueue(self):
         currentNode = self.first 

@@ -10,6 +10,12 @@ import seaborn as sns
 df = sns.load_dataset("car_crashes")
 df.columns
 
+
+num_cols = ['NUM_' + col.upper() for col in df.columns if df[col].dtype in [int,float]]
+
+print(num_cols)
+
+
 # Veri setini baştan okutarak aşağıdaki çıktıyı elde etmeye çalışınız.
 
 # ['NUM_TOTAL',
@@ -29,6 +35,9 @@ df.columns
 ###############################################
 # Görev 1 Çözüm
 ###############################################
+
+
+print(['NUM_' + col.upper() if df[col].dtype in [int,float] else col.upper() for col in df.columns ])
 
 
 ###############################################
@@ -53,6 +62,10 @@ df.columns
 ###############################################
 # Görev 2 Çözüm
 ###############################################
+
+    
+
+#df.columns = ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns]
 
 
 ###############################################
@@ -81,3 +94,10 @@ df.columns
 ###############################################
 # Görev 3 Çözüm
 ###############################################
+
+og_list = ["abbrev", "no_previous"]
+
+new_cols = [col for col in df.columns if col not in og_list]
+
+new_df = df[new_cols]
+print(new_df.head())

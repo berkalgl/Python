@@ -3,6 +3,7 @@
 
 #private ?
 #dander built-in functions
+# _ means that the attribute is private
 class PlayerCharacter:
     def __init__(self, name, age):
         self._name = name

@@ -11,7 +11,7 @@ df = sns.load_dataset("car_crashes")
 df.columns
 
 
-num_cols = ['NUM_' + col.upper() for col in df.columns if df[col].dtype in [int,float]]
+num_cols = ['NUM_' + col.upper() if df[col].dtype in [int,float] else col.upper() for col in df.columns]
 
 print(num_cols)
 
@@ -64,6 +64,7 @@ print(['NUM_' + col.upper() if df[col].dtype in [int,float] else col.upper() for
 ###############################################
 
     
+df.columns = [col.upper() + "_FLAG" if "no" not in col else col.upper() for col in df.columns ]
 
 #df.columns = ["FLAG_" + col if "INS" in col else "NO_FLAG_" + col for col in df.columns]
 

@@ -28,3 +28,16 @@ print(sc.buy(1))
 #you can add a package to a package
 
 # modules overrides built-in functions
+
+# __main__
+
+#if __name__ == '__main__':
+print(__name__) #prints __main__
+# interpreter finds the module, it adds this code to memory. now it has access
+
+# the name main, is given specifially to the file that we run because when we ran one single file
+# that one file is default named __main__
+# this condition statement is a good way for us to only run code of the main file
+# if we add if statement, the code do not run unless the file is the one is running.
+
+# print(type(utility.st1)) #prints out utility.Student so is created in utility class

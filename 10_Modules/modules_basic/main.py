@@ -41,6 +41,3 @@ print(__name__) #prints __main__
 # if we add if statement, the code do not run unless the file is the one is running.
 
 # print(type(utility.st1)) #prints out utility.Student so is created in utility class
-
-#Python Package Index
-# https://pypi.org/

@@ -1,5 +1,6 @@
 # https://www.w3schools.com/python/python_regex.asp
 # https://regex101.com/
+# https://regexone.com/
 import re
 
 string = 'search inside of this text please!'
@@ -21,3 +22,9 @@ e = pattern.match(string)
 
 pattern2 = re.compile(r"([a-zA-Z]).([a])") # r stands for raw string / pure string
 string = 'search this inside of this text please ! Berk'
+
+emailpattern = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+string = 'b@b.com'
+
+f = emailpattern.search(string)
+print(f)

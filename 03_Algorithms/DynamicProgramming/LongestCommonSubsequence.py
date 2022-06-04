@@ -6,21 +6,23 @@ def LCSRecursive(A,B, i, j):
     else:
         return max(LCSRecursive(A,B,i+1,j), LCSRecursive(A,B,i,j+1))
 
-def LCSDP(A, B, lenA, lenB, twodim):
+def LCSDP(A, B, lenA, lenB, lookup):
     if lenA == 0 or lenB == 0:
         return 0
-
-    if A[lenA - 1] == B[lenB - 1]:
-        twodim[lenA][lenB] = 1 + LCSDP(A, B, lenA - 1, lenB - 1, twodim)
-        return twodim[lenA][lenB]
     
-    if twodim[lenA][lenB] != -1:
-        return twodim[lenA][lenB]
+    key = (lenA, lenB)
 
-    twodim[lenA][lenB] = max(LCSDP(A, B, lenA, lenB - 1, twodim), LCSDP(A, B, lenA - 1, lenB, twodim))
+    if key not in lookup:
+        if A[lenA-1] == B[lenB-1]:
+            lookup[key] = LCSDP(A, B, lenA - 1, lenB - 1, lookup) + 1
+        else:
+            lookup[key] = max(LCSDP(A, B, lenA - 1, lenB, lookup), LCSDP(A,B, lenA, lenB - 1, lookup))
+
+    return lookup[key]
+    
 
 arr1="ABCDGHLQR"
 arr2="AEDPHR"
-two= [[]]
+lookup = {}
 print(LCSRecursive(arr1,arr2,0,0))
-print(LCSDP(arr1,arr2,len(arr1),len(arr2),two))
+print(LCSDP(arr1,arr2,len(arr1),len(arr2),lookup))

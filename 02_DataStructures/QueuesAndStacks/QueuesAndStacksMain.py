@@ -5,7 +5,7 @@
 #youtube
 
 #stacks are implemented with arrays and linked lists
-# Arrays allow cash locality which makes them technically faster accessing its items in memory 
+# Arrays allow cache locality which makes them technically faster accessing its items in memory 
 # because they're right next to each other
 # versus linked list that has them scattered all over memory and also linked lists have extra memory associated with them 
 # because we have to hold on to those pointers, on the other hand they have more dynamic memory.

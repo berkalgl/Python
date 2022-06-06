@@ -13,6 +13,7 @@
 # insert O(logN)            insert O(n)
 # delete O(logN)            delete O(n)
 
+# BST
 # Advantages                Disadvantages
 # Better than O(n)          No O(1) Operations
 # Ordered
@@ -34,7 +35,7 @@
 # Level 1: 2^1 = 2
 # Level 2: 2^2 = 4
 # Level 3: 2^3 = 8
-# # of nodes = 2^h - 1  h: number of levels
+# number of nodes = 2^h - 1  h: number of levels
 # log nodes = height(Steps)     log100=2
 # Google search uses binary tree, looking for a phone number in a phone book is a also binary search tree
 #https://visualgo.net/en/bst

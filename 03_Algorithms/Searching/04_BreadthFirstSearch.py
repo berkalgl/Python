@@ -11,8 +11,8 @@
 # importing sys
 import sys
   
-sys.path.insert(0, 'D:/CodeRepository/PythonDSA')
-from DataStructures.Trees.TreesMain import BinarySearchTree
+sys.path.insert(0, 'Users\berkalgul\Desktop\CodeRepository\PythonDSA')
+from DataStructures. Trees.TreesMain import BinarySearchTree
 from DataStructures.QueuesAndStacks.QueuesMain import Queue
 
 def BreadthFirstSearch(searchTree:BinarySearchTree):
@@ -44,6 +44,23 @@ def BreadthFirstSearchRecursive(queue:Queue, result):
 
     return BreadthFirstSearchRecursive(queue, result)
 
+def LeftViewOfTheBST(searchTree:BinarySearchTree):
+    queue = []
+    queue.append(searchTree.root)
+    result = []
+
+    while not len(queue):
+        length = len(queue)
+        for i in range(1, length):
+            curr_node = queue.pop(0)
+            if i == 1:
+                result.append(curr_node.value)
+            if curr_node.left:
+                queue.append(curr_node.left)
+            if curr_node.right:
+                queue.append(curr_node.right)
+    return result
+
     
     
 #        9
@@ -62,3 +79,5 @@ myTree.insert(170)
 print(BreadthFirstSearch(myTree))
 print('-----------------------')
 print(BreadthFirstSearchRecursive(Queue.enqueue(Queue(),myTree.root), []))
+print('-----------------------')
+print(LeftViewOfTheBST(myTree))

@@ -147,6 +147,22 @@ class BinarySearchTree:
                             parentNode.right = leftmost
             return True
 
+    def LeftViewOfTheBST(self):
+        queue = []
+        queue.append(self.root)
+        result = []
+
+        while len(queue):
+            length = len(queue)
+            for i in range(1, length + 1):
+                curr_node = queue.pop(0)
+                if i == 1: # to see the right view just equal to the size
+                    result.append(curr_node.value)
+                if curr_node.left:
+                    queue.append(curr_node.left)
+                if curr_node.right:
+                    queue.append(curr_node.right)
+        return result
 #        9
 #    4      20
 #  1   6  15   170
@@ -160,5 +176,6 @@ myTree.insert(6)
 myTree.insert(15)
 myTree.insert(170)
 
+print(myTree.LeftViewOfTheBST())
 print(myTree.lookup(169))
 print(myTree.remove(170))

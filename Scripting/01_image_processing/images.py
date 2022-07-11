@@ -1,5 +1,8 @@
 from PIL import Image, ImageFilter
 
+# How to analyse images and machine learning
+#opencv.org
+
 # we have converted or opened up this JPEG
 # into an image object that Pillow gives us that we can now manipulate
 img = Image.open('./pokedex/pikachu.jpg')

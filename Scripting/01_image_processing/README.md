@@ -24,3 +24,5 @@ How to
 - access some attributes of image
 - blur, sharpen, smooth, grey, rotate, resize, crop an image
 - thumbnail an image
+
+- opencv.org for analysing images and machine learnings.

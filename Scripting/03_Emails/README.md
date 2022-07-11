@@ -13,10 +13,7 @@ https://docs.python.org/3/library/email.html
 You can find out;
 
 How to
-- read pdf file
-- merge pdf files
-- watermark a pdf file
-
-- opencv.org for analysing images and machine learnings.
+- send email with basic text
+- with html with custom attributes
 
 https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/

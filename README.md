@@ -6,7 +6,7 @@ For future purpose, it seems like a cheatsheet :)
 
 # Python Basics 
 
-1 - [Python Basics](https://github.com/berkalgl/Python/tree/master/Basic)
+1 - [Python Basics](https://github.com/berkalgl/Python/tree/master/01_Basic)
 
 This Folder contains information about basics in Python
 
@@ -19,7 +19,7 @@ You can find out;
 
 # Python DSA (Data Structures and Algorithms)
 
-2 - [Python DSA](https://github.com/berkalgl/Python/tree/master/DSA)
+2 - [Python DSA](https://github.com/berkalgl/Python/tree/master/02_DSA)
 
 This Folder contains information about DSA challenges and implementation of High Level Data Structures in Python
 
@@ -31,7 +31,7 @@ You can find out;
 
 # Python Programming
 
-3 - [Python Programming](https://github.com/berkalgl/Python/tree/master/Programming)
+3 - [Python Programming](https://github.com/berkalgl/Python/tree/master/03_Programming)
 
 This Folder contains information about programmality of Python
 
@@ -48,19 +48,19 @@ You can find out;
 
 This folder contains some project about scripting in Python
 
-4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_ImageProcessing)
+4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/04_Scripting/01_ImageProcessing)
 
-5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_pdfs)
+5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/04_Scripting/02_pdfs)
 
-6 - [Working with Emails](https://github.com/berkalgl/Python/tree/master/Scripting/03_Emails)
+6 - [Working with Emails](https://github.com/berkalgl/Python/tree/master/04_Scripting/03_Emails)
 
-7 - [Password Checker](https://github.com/berkalgl/Python/tree/master/Scripting/04_PasswordChecker)
+7 - [Password Checker](https://github.com/berkalgl/Python/tree/master/04_Scripting/04_PasswordChecker)
 
-8 - [Twitter Bot](https://github.com/berkalgl/Python/tree/master/Scripting/05_TwitterBot)
+8 - [Twitter Bot](https://github.com/berkalgl/Python/tree/master/04_Scripting/05_TwitterBot)
 
 
 # Python WebScraping 
 
 This folder contains information about web scraping in Python
 
-3 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/WebScraping)
+9 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/05_WebScraping)

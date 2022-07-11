@@ -48,6 +48,7 @@ You can find out;
 
 This repository contains some project about scripting in Python
 
-4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_image_processing)
-5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_pdfs)
+4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_ImagesProcessing)
+5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_Pdfs)
+6 - [Working with Emails](https://github.com/berkalgl/Python/tree/master/Scripting/02_Emails)
 

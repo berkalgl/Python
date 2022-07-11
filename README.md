@@ -46,7 +46,7 @@ You can find out;
 
 # Python Scripting 
 
-This repository contains some project about scripting in Python
+This folder contains some project about scripting in Python
 
 4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_ImageProcessing)
 
@@ -59,3 +59,8 @@ This repository contains some project about scripting in Python
 8 - [Twitter Bot](https://github.com/berkalgl/Python/tree/master/Scripting/05_TwitterBot)
 
 
+# Python WebScraping 
+
+This folder contains information about web scraping in Python
+
+3 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/WebScraping)

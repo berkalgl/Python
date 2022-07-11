@@ -48,10 +48,14 @@ You can find out;
 
 This repository contains some project about scripting in Python
 
-4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_ImagesProcessing)
-5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_Pdfs)
+4 - [Image Processing](https://github.com/berkalgl/Python/tree/master/Scripting/01_ImageProcessing)
+
+5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_pdfs)
+
 6 - [Working with Emails](https://github.com/berkalgl/Python/tree/master/Scripting/03_Emails)
+
 7 - [Password Checker](https://github.com/berkalgl/Python/tree/master/Scripting/04_PasswordChecker)
+
 8 - [Twitter Bot](https://github.com/berkalgl/Python/tree/master/Scripting/05_TwitterBot)
 
 

@@ -52,5 +52,6 @@ This repository contains some project about scripting in Python
 5 - [Working with PDFs](https://github.com/berkalgl/Python/tree/master/Scripting/02_Pdfs)
 6 - [Working with Emails](https://github.com/berkalgl/Python/tree/master/Scripting/03_Emails)
 7 - [Password Checker](https://github.com/berkalgl/Python/tree/master/Scripting/04_PasswordChecker)
+8 - [Twitter Bot](https://github.com/berkalgl/Python/tree/master/Scripting/05_TwitterBot)
 
 

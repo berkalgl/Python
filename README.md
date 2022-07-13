@@ -64,3 +64,9 @@ This folder contains some project about scripting in Python
 This folder contains information about web scraping in Python
 
 9 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/05_WebScraping)
+
+# Web Development
+
+This folder contains information about developing a web app with flask, you can find out more about it in the section
+
+9 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/06_WebDevelopment)

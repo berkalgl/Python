@@ -64,3 +64,12 @@ https://flask.palletsprojects.com/en/1.1.x/quickstart/#accessing-request-data
 http://www.mashup-template.com/templates.html
 https://html5up.net/
 https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price
+
+# Free Hosting
+pythonanywhere.com
+https://help.pythonanywhere.com/pages/Flask/
+
+# Creating requirements.txt
+-We are managing the dependencies
+https://www.idkrtm.com/what-is-the-python-requirements-txt/
+pip freeze > requirements.txt

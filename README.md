@@ -69,4 +69,10 @@ This folder contains information about web scraping in Python
 
 This folder contains information about developing a web app with flask, you can find out more about it in the section
 
-9 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/06_WebDevelopment)
+10 - [Python WebScraping](https://github.com/berkalgl/Python/tree/master/06_WebDevelopment)
+
+# Automation - Testing
+
+This folder contains information about testing automation using selenium, you can find out more about it in the section
+
+10 - [Python Automation](https://github.com/berkalgl/Python/tree/master/07_WebDevelopment)

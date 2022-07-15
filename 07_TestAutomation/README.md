@@ -14,3 +14,5 @@ pip install selenium
 
 ## Docs
 https://selenium-python.readthedocs.io/
+http://allselenium.info/python-selenium-commands-cheat-sheet-frequently-used/
+https://demo.seleniumeasy.com/

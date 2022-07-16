@@ -51,6 +51,7 @@ https://numpy.org/
 - Pandas 
 It is used for what we call data analysis, it gives the idea of data frame, which allows us the functionality to manipulate data in tabular structure rows and columns
 https://pandas.pydata.org/
+https://github.com/GokuMohandas/Made-With-ML/blob/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks/03_Pandas.ipynb
 
 - Scikit Learn 
 Creating a model part. Scikit library comes with pre-build algorithms, so we can do classification, regressionsi clustering.
@@ -69,6 +70,15 @@ It is a community of machine learning experts where you can do competitions, you
 We have free access to data, to massive amounts of data that are openly accessible.
 https://www.kaggle.com/
 
+- Tensorflow
+https://www.tensorflow.org/install/pip
+
+
+# - What's next?
+- Custom models
+- Retrainable models
+- Pre-trained models
+
 ## Installation 
 
 In order to use Selenium,
@@ -77,3 +87,11 @@ pip install selenium
 
 ## Docs
 https://research.facebook.com/blog/2018/05/the-facebook-field-guide-to-machine-learning-video-series/
+
+-visualization
+https://seaborn.pydata.org/
+-interactive visualization
+https://docs.bokeh.org/en/latest/index.html
+
+-save and load the model
+https://scikit-learn.org/stable/model_persistence.html

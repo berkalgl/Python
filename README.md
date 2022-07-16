@@ -75,4 +75,10 @@ This folder contains information about developing a web app with flask, you can 
 
 This folder contains information about testing automation using selenium, you can find out more about it in the section
 
-11 - [Python Automation](https://github.com/berkalgl/Python/tree/master/07_WebDevelopment)
+11 - [Python Automation](https://github.com/berkalgl/Python/tree/master/07_TestAutomation)
+
+# Machine Learning + Data Science
+
+This folder contains information about Machine Learning and Data Science, you can find out more about it in the section
+
+11 - [Python Machine Learning + Data Science](https://github.com/berkalgl/Python/tree/master/08_ML_DataScience)
